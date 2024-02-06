@@ -7,7 +7,7 @@
   
     <div class="card col-6 offset-2" >
         <img class="card-img-top show-img" src="<%= listing.image %>" alt="Card image cap">
-        <div class="card-body">
+        <div class="card-body content">
             <p class="card-text">
                <b><%= listing.title %></b><br>
                 <%= listing.description %><br>
@@ -16,7 +16,7 @@
                 <%= listing.country %>  
             </p>
             <div class="btns">
-                <a href="/listings/<%= listing._id%>/edit" class="btn btn-dark">Edit</a>
+                <a href="/listings/<%= listing._id%>/edit" class="btn  addbtn">Edit</a>
                 <form method="POST" action="/listings/<%= listing._id %>?_method=DELETE" >
                 <button class="btn btn-dark mt-3">Delete</button>
                 </form>

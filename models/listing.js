@@ -4,8 +4,8 @@ const listingSchema= new Schema({
     title:{type:String,required:true},
     description:String,
     image:{type:String,
-        default:"https://images.unsplash.com/photo-1635864060824-87c462dd4a5a?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    set:(v)=>v===""?"https://unsplash.com/photos/a-lone-sailboat-in-the-middle-of-the-ocean-uI3CBm8udb4":v
+        default:"https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlibjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60",
+    set:(v)=>v===""?"https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?ixlibjA3fDB8MHxzZWFyY2h8Mnx8YmVhY2glMjBob3VzZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60":v
     },
     price:Number,
     location:String,

@@ -73,3 +73,10 @@ body{
 .show-img{
     height:30%;
 }
+.addbtn{
+    background-color: #fe424d !important;
+    border: none !important;
+    color: #ebebeb !important;
+    margin-bottom: 1rem;
+}
+
