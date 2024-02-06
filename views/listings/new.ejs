@@ -9,11 +9,13 @@
                 <div class="mb-3">
                     <label for="title" class="form-label">Title</label>
                 <input type="text" name="title" placeholder="enter title" class="form-control"  required>
+                <div class="valid-feedback">Title looks good!</div>
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label" >Description</label>
                 <textarea name="description" placeholder="enter description" class="form-control" required></textarea>
-                </div >
+                <div class="invalid-feedback">Description should be short</div>    
+            </div >
                 <div class="mb-3"> <label for="image" class="form-label" >Image Url</label>
                 <input name="image" class="form-control" type="text" placeholder="Enter Image Url/Link" >
                 </div>
@@ -22,11 +24,12 @@
                     
                         <label for="country" class="form-label">Country</label>
                         <input type="text" name="country" placeholder="enter country" class="form-control" required> 
+                        <div class="invalid-feedback">Country name should be valid</div>
                     </div>
                     <div class="mb-3 col-md-8">
                         <label for="price class="form-label">Price</label>
-                        <input type="number" name="price" placeholder="enter price"class="form-control" required >
-                        
+                        <input  name="price" placeholder="enter price"class="form-control" required >
+                        <div class="invalid-feedback">Price should be valid</div>
                 </div>
                 </div>
                 
@@ -34,6 +37,7 @@
         
                     <label for="location" class="form-label">Location</label>
                     <input type="text" name="location" placeholder="enter location" class="form-control" required>
+                    <div class="invalid-feedback">Location should be valid</div>
                 </div>
                 
                 <br>
