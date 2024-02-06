@@ -31,9 +31,9 @@ app.get("/listings",wrapAsync(async (req,res)=>{
     res.render("./listings/index.ejs",{allListing});
 }));
 //new Route
-app.get("/listings/new",wrapAsync((req,res)=>{
+app.get("/listings/new",(req,res)=>{
     res.render("listings/new.ejs");
-}));
+});
 //Create Route
 app.post("/listings",wrapAsync(async (req,res)=>{
     let {title,description,image,price,location,country}=req.body;
@@ -76,7 +76,7 @@ app.all("*",(req,res,next)=>{
     next(new ExpressError(404,"Page not found"));
 });
 
-app.use((req,res,err,next)=>{
+app.use((err,req,res,next)=>{
 let {status=500,message="Something went wrong"}=err;
 res.status(status).send(message);
 });
